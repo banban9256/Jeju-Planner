@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# ✈️ Jeju Plan Guide (제주 플랜 가이드)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **"복잡한 여행 계획은 이제 그만, 제주도 여행을 스마트하게 관리하세요!"**
+> 여행 일정 관리부터 지출 정산까지, 한 번에 해결하는 올인원 여행 플래너입니다.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📸 프로젝트 미리보기
+*(이미지를 프로젝트 폴더 내 `assets` 폴더에 넣고 경로를 수정하세요)*
+| 메인 화면 | 상세 일정 | 정산 기능 |
+| :---: | :---: | :---: |
+| ![메인](assets/제주_1.png) | ![일정](assets/제주_2.png) | ![정산](assets/제주_3.png) |
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💡 주요 기능 (Key Features)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*   **📍 스마트 일정 관리**: 여행 기간별 상세 일정을 등록하고 관리할 수 있습니다.
+*   **🗺️ 이동 경로 타임라인**: 시간순으로 정렬된 이동 경로를 직관적인 타임라인 형태로 확인하세요.
+*   **💸 N빵 정산 시스템**: 결제 내역과 분담 내역을 입력하면, 자동으로 정산 영수증을 생성해줍니다.
+*   **✅ 여행 체크리스트**: 여행 전 준비물부터 일자별 할 일까지 놓치지 마세요.
+*   **📢 공지사항**: 여행 중 꼭 확인해야 할 주요 일정을 첫 화면에서 바로 확인하세요.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 기술 스택 (Tech Stack)
 
-### `npm run build`
+### **Frontend**
+*   **React**: UI 컴포넌트 기반의 사용자 인터페이스 설계 및 상태 관리(`useState`, `useEffect` 활용).
+*   **JavaScript**: ES6+ 문법을 활용한 동적 기능 구현 및 데이터 처리.
+    * ![React](https://img.shields.io/badge/React-20232a.svg?style=for-the-badge&logo=react&logoColor=61DAFB)
+    * ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Backend & Database**
+*   **Firebase Firestore**: NoSQL 기반의 실시간 데이터베이스를 활용한 여행 일정, 지출 내역, 체크리스트 데이터의 비동기 저장 및 동기화 구현.
+    * ![Firebase](https://img.shields.io/badge/Firebase-039BE5.svg?style=for-the-badge&logo=Firebase&logoColor=white)
+    * ![Firestore](https://img.shields.io/badge/Cloud_Firestore-FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **Development Tools**
+*   **Git**: 소스 코드 형상 관리 및 버전 관리.
+*   **VS Code**: 프로젝트 개발 환경.
+    * ![Git](https://img.shields.io/badge/Git-F05032.svg?style=for-the-badge&logo=git&logoColor=white)
+    * ![VS Code](https://img.shields.io/badge/VS_Code-007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 시작하기 (Getting Started)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
+*   Node.js 설치가 필요합니다.
+*   [Firebase 프로젝트](https://console.firebase.google.com/) 생성이 필요합니다.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
+1. 저장소 클론
+   ```bash
+   git clone https://github.com/banban9256/jeju_planner.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. 패키지 설치
+    ```bash
+    npm install```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. 환경 변수 설정
+    ```plaintext
+    REACT_APP_FIREBASE_API_KEY=your_api_key
+    REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+    REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+    REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+    REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_id
+    REACT_APP_FIREBASE_APP_ID=your_app_id
+    REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id ```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4.실행
+    ```bash
+    npm start```
