@@ -6,7 +6,7 @@
 ---
 
 ## 📸 프로젝트 미리보기
-*(이미지를 프로젝트 폴더 내 `assets` 폴더에 넣고 경로를 수정하세요)*
+
 | 메인 화면 | 상세 일정 | 정산 기능 |
 | :---: | :---: | :---: |
 | ![메인](assets/제주_1.png) | ![일정](assets/제주_2.png) | ![정산](assets/제주_3.png) |
@@ -53,7 +53,7 @@
 ### Installation
 1. 저장소 클론
    ```bash
-   git clone https://github.com/banban9256/jeju_planner.git
+   git clone https://github.com/banban9256/Jeju_Planner.git
 
 2. 패키지 설치
     ```bash
@@ -69,6 +69,6 @@
     REACT_APP_FIREBASE_APP_ID=your_app_id
     REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id ```
 
-4.실행
+4. 실행
     ```bash
     npm start```
